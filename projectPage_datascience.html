@@ -16,7 +16,7 @@
 			<div class="navbar_line">
 				<div class="navbar_logo">
 					<button class="navbar_logo_button">
-						<a href="/"><img src="Images/logo.png" alt="">
+						<a href="/"><img src="/Images/logo.png" alt="">
 							<span>Triple C</span></a>
 					</button>
 				</div>
@@ -35,7 +35,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="navbar_desktop_li"><a href="">About</a></li>
+						<li class="navbar_desktop_li"><a href="#homepage_aboutUs">About</a></li>
 						<li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
 						<li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
 						<li class="navbar_desktop_li"><a href="Team.html">Members</a></li>
@@ -45,7 +45,7 @@
 							<ul class="projects_li">
 								<li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
 								<li><a href="projectPage_androidtryway.html">Android App</a></li>
-								<li><a href="projectPage_datascience.html">Data Sceince</a></li>
+								<li><a href="projectPage_datascience.html">Data Science</a></li>
 								<li><a href="projectPage_officialwebsite.html">Official Web</a></li>
 							</ul>
 						</li class="navbar_desktop_li">
@@ -66,10 +66,10 @@
 					<span></span>
 					<span></span>
 					<ul id="nav_bar_menu">
-						<a href="/">
+						<a href="#homepage_aboutUs">
 							<li>
 								<i class="fas fa-home"></i>
-								Home
+								About Us
 							</li>
 						</a>
 						<a href="#announcement">
@@ -98,7 +98,7 @@
 							<ul class="projects_ul">
 								<li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
 								<li><a href="projectPage_androidtryway.html">Android App</a></li>
-								<li><a href="projectPage_datascience.html">Data Sceince</a></li>
+								<li><a href="projectPage_datascience.html">Data Science</a></li>
 								<li><a href="projectPage_officialwebsite.html">Official Web</a></li>
 							</ul>
 						</li>
@@ -125,7 +125,6 @@
 			<div id="projectpage_navigation">
 				<nav>
 					<a href="#projectpage_description">Description</a>
-					<a href="#projectpage_demo">Demo</a>
 					<a href="#projectpage_timeline">Timeline</a>
 					<a href="#projectpage_team">Team</a>
 				</nav>
@@ -586,60 +585,59 @@
 	<footer id="homepage_footer_container">
 
 		<div id="homepage_footer_main_box">
-		  <div id="homepage_footer_mission_title">
-			"Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
-			skill growth"
-		  </div>
-		  <div id="footer_icon_container">
-			<div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
-			  <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-			  </div>
+			<div id="homepage_footer_mission_title">
+				"Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+				skill growth"
 			</div>
-			<div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
-			  <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
-			  </div>
+			<div id="footer_icon_container">
+				<div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
+					<div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+					</div>
+				</div>
+				<div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+					<div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+					</div>
+				</div>
+
+				<div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+					<div id="homepage_footer_widget_facebook" class="homepage_footer_widgets">
+					</div>
+				</div>
+
+				<div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
+
+					<div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+						<img id='wechat' src="../Images/wechatQR.JPG">
+					</div>
+
+				</div>
+
+				<div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+					<div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+					</div>
+				</div>
+
 			</div>
-	
-			<div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
-			  <div id="homepage_footer_widget_facebook" class="homepage_footer_widgets">
-			  </div>
+			<div id="copyright">
+				Copyright &copy 2019 UCSDTripleC.
 			</div>
-	
-			<div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
-	
-			  <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
-				<img id='wechat' src="../Images/wechatQR.JPG">
-			  </div>
-	
-			</div>
-	
-			<div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
-			  <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
-			  </div>
-			</div>
-	
-		  </div>
-		  <div id="copyright">
-			Copyright &copy 2019 UCSDTripleC.
-		  </div>
 		</div>
-	  </footer>
+	</footer>
 
 
 </body>
 
 <script>
-	 function showImg(id)
-      {
-        document.getElementById(id).style.opacity = 1;
-        document.getElementById(id).style.zIndex = "1";
-      }
+	function showImg(id) {
+		document.getElementById(id).style.opacity = 1;
+		document.getElementById(id).style.zIndex = "1";
+	}
 
-      function hideImg(id){
-        document.getElementById(id).style.opacity = 0;
-        document.getElementById(id).style.zIndex = "-1";
+	function hideImg(id) {
+		document.getElementById(id).style.opacity = 0;
+		document.getElementById(id).style.zIndex = "-1";
 
-      }
+	}
 </script>
 
 </html>

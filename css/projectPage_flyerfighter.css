@@ -955,7 +955,7 @@ header section
   /*padding-bottom: 75px;*/
 
   width: 100%;
-  font-size: 22px;
+
   height: 40px;
   line-height: 40px;
 }
@@ -965,7 +965,7 @@ header section
   text-align: center;
   display: block;
   color: #CCA374;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
 
 
   font-size: 2em;
@@ -1534,9 +1534,9 @@ p {
   background-color: grey;
   border-radius: 50%;
   float: left;
-  margin-top: 20px; 
-  margin-left: 10px; 
-  margin-right: 10px; 
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 10px;
   transition: 0.5s;
 }
@@ -1587,9 +1587,9 @@ p {
 #footer_icon_container {
   height: 70px;
   /* margin-top: 20px; */
-  width:100%;
+  width: 100%;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 
@@ -1611,8 +1611,8 @@ justify-content: center;
 #copyright {
   text-align: center;
   background-color: #26262b;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   font-size: 15px;
 }
@@ -1949,10 +1949,11 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
-  #homepage_footer_main_box{
-    width:85%;
-    
+  #homepage_footer_main_box {
+    width: 85%;
+
   }
+
   #homepage_footer_mission_title {
     font-size: 15px;
   }
@@ -1975,10 +1976,10 @@ justify-content: center;
     background-color: grey;
     border-radius: 50%;
     float: left;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 10px; 
-    margin-right: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
     transition: 0.5s;
   }
